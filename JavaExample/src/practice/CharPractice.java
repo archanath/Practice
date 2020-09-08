@@ -12,7 +12,7 @@ public class CharPractice {
 		int i1 = str.charAt(9);
 		
 		System.out.println("The character at index 0 is :" + (char)i);
-		System.out.println("The character at index 5 is :" + (char)i1);
+		System.out.println("The character at index 9 is :" + (char)i1);
 		
 		
 	}

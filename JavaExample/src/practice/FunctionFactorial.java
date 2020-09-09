@@ -2,17 +2,19 @@ package practice;
 
 import java.util.Scanner;
 
-public class Factorial {
+public class FunctionFactorial {
 	
-	public static void main(String[] args) {
+	
+	public static void fact() {
 		
-		int num , i;
-		 System.out.println("Enter number:" );
+		int i; int num;
+		
+		System.out.println("Enter number:" );
 		
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		
-		 num = scanner.nextInt();
+		num= scanner.nextInt();
 		 
 		System.out.println("Enter number:" + num);
 		
@@ -23,6 +25,12 @@ public class Factorial {
 		}
 		
 		System.out.println("Factorial for :" + num + "is" +fact );
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		fact();
 		
 	}
 

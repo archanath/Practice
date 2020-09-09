@@ -2,32 +2,29 @@ package practice;
 
 import java.util.Scanner;
 
-public class CountNumbers {
+public class FunctionCountNumbers {
 	
-	public static void main(String[] args) {
-		
+	public static void countNumbers() {
+		int i;
 		int countP = 0;
 		int countN = 0;
 		int countZ = 0;
-		int i;
-		int num;
+		
 		char choice;
-		
-		
 		
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
 		do {
-		System.out.println("enter no");
-		num = scanner.nextInt();
-		
-					
-			if(num > 0) {
+			System.out.println("enter no");
+			
+			i= scanner.nextInt();
+			
+			if(i > 0) {
 				countP++;
 			}
-			if(num == 0) {
+			if(i == 0) {
 				countZ++;
-			}if(num < 0)
+			}if(i < 0)
 			{
 				countN++;
 			}
@@ -36,15 +33,20 @@ public class CountNumbers {
 			choice = scanner.next().charAt(0);
 		}while(choice == 'Y' || choice == 'y');
 	
-		
-		
 		System.out.println("Number of positive Nos :" + countP);
 		
 		System.out.println("Number of negative Nos :" + countN);
 		
 		System.out.println("Number of  zeros :" + countZ);
 		
+	}
+	
+	
+	public static void main(String[] args) {
 		
+		
+		
+		countNumbers();
 		
 	}
 
